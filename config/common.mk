@@ -65,5 +65,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/overlay/common
 # Packages
 include vendor/lluvia/config/packages.mk
 
-# Versioning
+# Versionin
 include vendor/lluvia/config/version.mk
+
+# include definitions for SDCLANG
+include vendor/lluvia/sdclang/sdclang.mk
