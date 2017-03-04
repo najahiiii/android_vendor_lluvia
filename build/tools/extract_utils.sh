@@ -974,12 +974,13 @@ function extract() {
                 adb pull "/$FILE" "$DEST"
             fi
         else
-            # Try OEM target first
-            if [ -f "$SRC/$FILE" ]; then
-                cp "$SRC/$FILE" "$DEST"
-            # if file does not exist try LLUVIA target
-            elif [ -f "$SRC/$TARGET" ]; then
+
+            # Try LLUVIA target first
+            if [ -f "$SRC/$TARGET" ]; then
                 cp "$SRC/$TARGET" "$DEST"
+            # if file does not exist try OEM target
+            elif [ -f "$SRC/$FILE" ]; then
+                cp "$SRC/$FILE" "$DEST"
             else
                 printf '    !! file not found in source\n'
             fi
