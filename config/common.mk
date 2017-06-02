@@ -68,5 +68,9 @@ include vendor/lluvia/config/packages.mk
 # Versionin
 include vendor/lluvia/config/version.mk
 
-# include definitions for SDCLANG
-include vendor/lluvia/sdclang/sdclang.mk
+# Include SDCLANG definitions if it is requested and available
+ifeq ($(HOST_OS),linux)
+    ifneq ($(wildcard vendor/qcom/sdclang-3.8/),)
+        include vendor/lluvia/sdclang/sdclang.mk
+    endif
+endif
