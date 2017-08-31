@@ -41,6 +41,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# Fix Dialer
+PRODUCT_COPY_FILES +=  \
+    vendor/lluvia/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/overlay/common
 
