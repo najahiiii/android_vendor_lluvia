@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# Copy all LLUVIA-specific init rc files
+$(foreach f,$(wildcard vendor/lluvia/prebuilt/common/etc/init/*.rc),\
+	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
+
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
     vendor/lluvia/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
