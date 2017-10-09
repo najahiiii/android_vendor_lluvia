@@ -124,6 +124,10 @@ else
     $(error "Bootanimation: TARGET_BOOT_ANIMATION_RES is undefined")
 endif
 
+# Fix Google dialer
+PRODUCT_COPY_FILES += \
+    vendor/lluvia/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
