@@ -4,6 +4,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
+ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.com.google.clientidbase=android-google
+else
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
+endif
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -11,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
 ifeq ($(filter lluvia_marlin lluvia_sailfish,$(TARGET_PRODUCT)),)
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     keyguard.no_require_sim=true \
     dalvik.vm.debug.alloc=0 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -61,7 +69,7 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Media
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
 # Don't compile SystemUITests
@@ -77,7 +85,7 @@ include vendor/lluvia/config/packages.mk
 include vendor/lluvia/config/version.mk
 
 # Set custom volume steps
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.config.media_vol_steps=30 \
     ro.config.bt_sco_vol_steps=30
 
