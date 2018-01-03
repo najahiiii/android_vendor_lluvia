@@ -10,7 +10,7 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/lluvia/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
-ifeq ($(filter aosip_marlin aosip_sailfish,$(TARGET_PRODUCT)),)
+ifeq ($(filter lluvia_marlin lluvia_sailfish,$(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     dalvik.vm.debug.alloc=0 \
@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
     vendor/lluvia/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+
+# Clean up packages cache to avoid wrong strings and resources
+PRODUCT_COPY_FILES += \
+    vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
