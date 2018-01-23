@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/lluvia/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Init file
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/init.local.rc:root/init.lluvia.rc
