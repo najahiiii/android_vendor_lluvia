@@ -141,6 +141,7 @@ PRODUCT_PACKAGES += \
     libffmpeg_omx \
     media_codecs_ffmpeg.xml
 
+
 PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
@@ -151,6 +152,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.recorder.show_manufacturer_and_model=true
 
 # Packages
 PRODUCT_PACKAGES += \
