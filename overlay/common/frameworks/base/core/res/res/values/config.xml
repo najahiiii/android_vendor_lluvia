@@ -85,6 +85,12 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
     </string-array>
 
+    <!-- System font packages (overlay in vendor) -->
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.dirtyunicorns.fonts</item>
+    </string-array>
+</resources>
+
     <bool name="config_enableAutoPowerModes">true</bool>
 
     <!-- If this is true, long press on power button will be available from a

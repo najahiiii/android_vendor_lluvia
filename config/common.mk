@@ -71,6 +71,10 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
+# Fonts
+PRODUCT_PACKAGES += \
+    DU-Fonts
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
