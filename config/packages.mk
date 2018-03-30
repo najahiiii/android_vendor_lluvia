@@ -18,8 +18,6 @@ PRODUCT_PACKAGES += \
     CyanAccent \
     DeepOrangeAccent \
     DeepPurpleAccent \
-    DuiDark \
-    GBoardDark \
     GreenAccent \
     GreyAccent \
     IndigoAccent \
@@ -30,11 +28,24 @@ PRODUCT_PACKAGES += \
     PinkAccent \
     PurpleAccent \
     RedAccent \
-    SettingsDark \
-    SystemDark \
     TealAccent \
     YellowAccent \
     WhiteAccent
+
+# Dark Theme
+PRODUCT_PACKAGES += \
+    DuiDark \
+    GBoardDark \
+    SettingsDark \
+    SystemDark \
+    UpdaterDark \
+
+# BlackAF Theme
+PRODUCT_PACKAGES += \
+    DuiBlackAF \
+    GBoardBlackAF \
+    SettingsBlackAF \
+    SystemBlackAF \
 
 # Extra tools
 PRODUCT_PACKAGES += \
