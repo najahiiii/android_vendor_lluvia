@@ -38,7 +38,6 @@ PRODUCT_PACKAGES += \
     GBoardDark \
     SettingsDark \
     SystemDark \
-    UpdaterDark \
 
 # BlackAF Theme
 PRODUCT_PACKAGES += \
@@ -46,6 +45,10 @@ PRODUCT_PACKAGES += \
     GBoardBlackAF \
     SettingsBlackAF \
     SystemBlackAF \
+
+# Analog clocks
+PRODUCT_PACKAGES += \
+    AnalogDeadpool
 
 # Extra tools
 PRODUCT_PACKAGES += \
