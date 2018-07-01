@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Basic \\
+    Basic \
     LiveWallpapersPicker \
     PhaseBeam
 
@@ -81,7 +81,8 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Timber \
     CameraNextMod \
-    WallpaperPickerGoogle 
+    WallpaperPickerGoogle \
+    KiwiBrowser
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
