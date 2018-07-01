@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelLauncher \
     Launcher3 \
+    Timber \
     WallpaperPickerGoogle 
 
 # Include explicitly to work around GMS issues
