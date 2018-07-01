@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Basic \
+    Basic \\
     LiveWallpapersPicker \
     PhaseBeam
 
@@ -80,6 +80,7 @@ PRODUCT_PACKAGES += \
     PixelLauncher \
     Launcher3 \
     Timber \
+    CameraNextMod \
     WallpaperPickerGoogle 
 
 # Include explicitly to work around GMS issues
