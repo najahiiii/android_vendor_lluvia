@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelLauncher \
     Launcher3 \
-    Timber \
+    Eleven \
     CameraNextMod \
     WallpaperPickerGoogle \
     KiwiBrowser
