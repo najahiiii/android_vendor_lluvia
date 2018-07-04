@@ -29,12 +29,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     UM_4_9_FAMILY := sdm845
     UM_PLATFORMS := $(UM_3_18_FAMILY) $(UM_4_4_FAMILY) $(UM_4_9_FAMILY)
 
-    ifeq ($(TARGET_USES_UM_PLATFORM),true)
-        UM_3_18_FAMILY += $(BR_FAMILY)
-        # Empty the BR_FAMILY variable so the platform doesn't match it
-        BR_FAMILY :=
-    endif
-
     BOARD_USES_ADRENO := true
 
     # UM platforms no longer need this set on O+
@@ -58,8 +52,8 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     # Allow building audio encoders
     TARGET_USES_QCOM_MM_AUDIO := true
 
-    # Enable color metadata for UM platforms
-    ifeq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY) $(UM_4_4_FAMILY)),true)
+    # Enable color metadata for every UM platform
+    ifeq ($(call is-board-platform-in-list, $(UM_PLATFORMS)),true)
         TARGET_USES_COLOR_METADATA := true
     endif
 
