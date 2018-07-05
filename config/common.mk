@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt packages
 PRODUCT_PACKAGES += \
-    PixelLauncher \
+    AdAway \
     Launcher3 \
     Eleven \
     CameraNextMod \
