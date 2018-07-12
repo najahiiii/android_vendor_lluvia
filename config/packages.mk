@@ -7,7 +7,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     messaging \
     Turbo \
-    CameraNextMod
+    CameraNextMod \
+    MaterialFX
 
 # Overlays
 PRODUCT_PACKAGES += \
