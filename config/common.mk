@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
     AdAway \
     Launcher3 \
     Eleven \
-    AudioFX \
+    MaterialFX \
     CameraNextMod \
     WallpaperPickerGoogle \
     KiwiBrowser
