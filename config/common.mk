@@ -90,10 +90,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# AudioFX
-PRODUCT_PACKAGES += \
-    AudioFX
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
