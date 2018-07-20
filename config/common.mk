@@ -141,7 +141,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/lluvia/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # LLuvia OTA
-include vendor/lluvia/config/ota.mk
+#include vendor/lluvia/config/ota.mk
 
 # LLuviaStorm
 PRODUCT_PACKAGES += \
