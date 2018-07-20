@@ -15,6 +15,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
+# Disable HDCP check
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.sys.wfd.nohdcp=1
+
 # Backup tool
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
