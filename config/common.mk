@@ -107,8 +107,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     OmniJaws \
     BluetoothExt \
-    Launcher3Dark \
-    Poweramp-beta-preview-build-790-uni
+    Launcher3Dark 
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -147,16 +146,6 @@ include vendor/lluvia/config/ota.mk
 # LLuviaStorm
 PRODUCT_PACKAGES += \
     LLuviaStorm
-
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libffmpeg_extractor \
-    libffmpeg_omx \
-    media_codecs_ffmpeg.xml
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.sf.omx-plugin=libffmpeg_omx.so \
-    media.sf.extractor-plugin=libffmpeg_extractor.so
 
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
