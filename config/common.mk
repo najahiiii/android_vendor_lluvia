@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     MaterialFX \
     CameraNextMod \
     WallpaperPickerGoogle \
-    KiwiBrowser
+    KiwiBrowser \
+    MiXplorerPrebuilt
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
