@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     OmniJaws \
-    BluetoothExt \
     Launcher3Dark 
 
 # Extra tools
