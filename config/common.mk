@@ -2,8 +2,17 @@ PRODUCT_BRAND ?= LLuvia
 
 LLUVIA_VERSION_NUMBER := 3.0
 
-ifndef LLUVIA_BUILDTYPE
-LLUVIA_BUILDTYPE := ManMade
+ifndef LLUVIA_BUILD_TYPE
+LLUVIA_BUILD_TYPE := ManMade
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.lluvia.buildtype=ManMade
+endif
+
+ifeq ($(LLUVIA_BUILD_TYPE), OFFICIAL)
+LLUVIA_BUILD_TYPE := NatureMade
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.lluvia.buildtype=NatureMade
 endif
 
 LLUVIA_VERSION := LLuviaOS-$(LLUVIA_VERSION_NUMBER)-$(shell date -u +%Y%m%d)-$(LLUVIA_BUILDTYPE)-$(LLUVIA_BUILD)
