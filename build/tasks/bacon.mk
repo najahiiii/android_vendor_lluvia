@@ -20,7 +20,7 @@ ifneq ($(BUILD_WITH_COLORS),0)
     include $(TOP_DIR)vendor/lluvia/build/core/colors.mk
 endif
 
-LLUVIA_TARGET_PACKAGE := $(PRODUCT_OUT)/LLuviaOS-$(PIXYS_VERSION).zip
+LLUVIA_TARGET_PACKAGE := $(PRODUCT_OUT)/$(LLUVIA_VERSION).zip
 
 .PHONY: bacon rain
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
