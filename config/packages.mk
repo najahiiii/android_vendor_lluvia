@@ -8,7 +8,8 @@ PRODUCT_PACKAGES += \
     messaging \
     Turbo \
     CameraNextMod \
-    MaterialFX
+    MaterialFX \
+    LLuviaStorm
 
 # Overlays
 PRODUCT_PACKAGES += \
