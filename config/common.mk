@@ -41,6 +41,9 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/overlay/common
+
 # Packages
 include vendor/lluvia/config/packages.mk
 
