@@ -45,11 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 endif
 
-# Themes
-PRODUCT_COPY_FILES += \
-    vendor/lluvia/prebuilt/common/apk/Pixel.apk:system/vendor/overlay/Pixel.apk \
-    vendor/lluvia/prebuilt/common/apk/Stock.apk:system/vendor/overlay/Stock.apk
-
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/mkshrc:system/etc/mkshrc
