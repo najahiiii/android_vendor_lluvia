@@ -5,7 +5,7 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
 
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     keyguard.no_require_sim=true \
     dalvik.vm.debug.alloc=0 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -19,10 +19,10 @@ PRODUCT_GENERIC_PROPERTIES += \
     ro.carrier=unknown
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
 else
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
@@ -72,7 +72,7 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Storage manager
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
 
 # Media
@@ -80,12 +80,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
 # Set custom volume steps
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.media_vol_steps=30 \
     ro.config.bt_sco_vol_steps=30
 
 # Disable Rescue Party
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.disable_rescue=true
 
 # Charger
