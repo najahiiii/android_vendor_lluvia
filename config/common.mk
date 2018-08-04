@@ -58,9 +58,6 @@ EXCLUDE_SYSTEMUI_TESTS := true
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/overlay/common
 
-# Include LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/overlay/dictionaries
-
 # Packages
 include vendor/lluvia/config/packages.mk
 
