@@ -13,7 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, build/target/product/aosp_x86.mk)
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 
 TARGET_USES_64_BIT_BINDER := true
 
