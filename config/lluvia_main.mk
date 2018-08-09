@@ -1,6 +1,8 @@
 # LLuviaOS apps
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    Stk \
+    Terminal
 
 # LLuvia Theme
 include vendor/lluvia/themes/config.mk
