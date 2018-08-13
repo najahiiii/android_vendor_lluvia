@@ -1,5 +1,11 @@
 # LLuviaOS apps
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
+     MarkupGoogle
+
+# Markup libs
+PRODUCT_COPY_FILES += \
+    vendor/lluvia/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/lluvia/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # LLuvia Theme
 include vendor/lluvia/themes/config.mk
