@@ -7,6 +7,10 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
     vendor/lluvia/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
+# Pixel sysconfig
+PRODUCT_COPY_FILES += \
+    vendor/lluvia/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+
 # LLuvia Theme
 include vendor/lluvia/themes/config.mk
 
