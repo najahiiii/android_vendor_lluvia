@@ -1,6 +1,7 @@
 # LLuviaOS apps
 PRODUCT_PACKAGES += \
-     MarkupGoogle
+     MarkupGoogle \
+     WellbeingPrebuilt
 
 # Markup libs
 PRODUCT_COPY_FILES += \
