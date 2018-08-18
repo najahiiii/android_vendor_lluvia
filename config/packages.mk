@@ -9,7 +9,10 @@ PRODUCT_PACKAGES += \
     Turbo \
     CameraNextMod \
     MaterialFX \
-    LLuviaStorm
+    LLuviaStorm \
+    KiwiBrowser \
+    MiXplorerPrebuilt
+
 
 # Overlays
 PRODUCT_PACKAGES += \
