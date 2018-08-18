@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
     MaterialFX \
     LLuviaStorm \
     KiwiBrowser \
-    MiXplorerPrebuilt
+    MiXplorerPrebuilt \
+    Music Player
 
 
 # Overlays
