@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     LLuviaStorm \
     KiwiBrowser \
     MiXplorerPrebuilt \
-    Music Player
+    RetroMusicPlayer
 
 
 # Overlays
