@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     LightBlueAccent \
     LightGreenAccent \
     LimeAccent \
-    LLuviaPinkAccent \
     OrangeAccent \
     PinkAccent \
     PurpleAccent \
