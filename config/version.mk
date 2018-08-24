@@ -35,9 +35,9 @@ LLUVIA_BUILD_VERSION := $(PRODUCT_VERSION_MINOR)-$(PRODUCT_VERSION_MAINTENANCE)
 LLUVIA_VERSION := $(LLUVIA_BUILD_VERSION)-$(LLUVIA_BUILD_TYPE)-$(LLUVIA_BUILD)-$(DATE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.lluvia.build.version=$(LLUVIA_BUILD_VERSION) \
+  ro.lluvia.build.version=$(PRODUCT_VERSION_MAJOR) \
   ro.lluvia.build.date=$(DATE) \
   ro.lluvia.buildtype=$(LLUVIA_BUILD_TYPE) \
-  ro.lluvia.version=$(LLUVIA_VERSION) \
+  ro.lluvia.version=$(PRODUCT_VERSION_MINOR) \
   ro.lluvia.device=$(LLUVIA_BUILD) \
-  ro.modversion=$(LLUVIA_VERSION)
+  ro.modversion=$(PRODUCT_VERSION_MAINTENANCE)
