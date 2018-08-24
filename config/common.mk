@@ -17,7 +17,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.build.selinux=1 \
     ro.carrier=unknown \
-    sys.use_fifo_ui=1
+    sys.use_fifo_ui=1 \
+    ro.boot.vendor.overlay.theme=com.lluvia.overlay.accent.amber;com.lluvia.overlay.base.BlackAF
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
