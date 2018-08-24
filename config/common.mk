@@ -16,7 +16,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.build.selinux=1 \
-    ro.carrier=unknown
+    ro.carrier=unknown \
+    sys.use_fifo_ui=1
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
