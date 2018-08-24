@@ -30,6 +30,9 @@ LLUVIA_DISPLAY_VERSION := $(LLUVIA_VERSION)
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.lluvia.display.version=$(LLUVIA_DISPLAY_VERSION)
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    sys.use_fifo_ui=1
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
