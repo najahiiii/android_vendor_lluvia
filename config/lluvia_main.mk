@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
      MarkupGoogle \
      WellbeingPrebuilt \
-     LatinIME
+     LatinIME \
+     FMRadio
 
 # Markup libs
 PRODUCT_COPY_FILES += \
