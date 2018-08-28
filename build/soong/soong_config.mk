@@ -11,6 +11,7 @@ $(call add_json_str,  Specific_camera_parameter_library,     $(TARGET_SPECIFIC_C
 $(call add_json_str, Target_destroyed_mutex_usage_whitelist, $(TARGET_DESTROYED_MUTEX_USAGE_WHITELIST))
 $(call add_json_bool, Device_support_hwfde, $(filter true,$(TARGET_HW_DISK_ENCRYPTION)))
 $(call add_json_bool, Device_support_hwfde_perf, $(filter true,$(TARGET_HW_DISK_ENCRYPTION_PERF)))
+$(call add_json_bool, Device_support_legacy_hwfde, $(filter true,$(TARGET_LEGACY_HW_DISK_ENCRYPTION)))
 $(call add_json_str,  Target_shim_libs,                      $(TARGET_LD_SHIM_LIBS))
 $(call add_json_bool, Uses_generic_camera_parameter_library, $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),,true))
 $(call add_json_bool, Uses_nvidia_enhancements,              $(filter TRUE,$(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)))
