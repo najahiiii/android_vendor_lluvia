@@ -6,8 +6,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     messaging \
-    Turbo \
-    CameraNextMod \
     MaterialFX \
     LLuviaStorm \
     KiwiBrowser \
