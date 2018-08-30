@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     messaging \
-    MaterialFX \
     LLuviaStorm \
     KiwiBrowser \
     MiXplorerPrebuilt \
