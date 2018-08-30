@@ -7,6 +7,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     messaging \
     LLuviaStorm \
+    ParanoidCamera \
     KiwiBrowser \
     MiXplorerPrebuilt \
     RetroMusicPlayer
