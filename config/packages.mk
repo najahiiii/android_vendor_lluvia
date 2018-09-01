@@ -1,7 +1,7 @@
 # Required packages
 PRODUCT_PACKAGES += \
     Gallery2 \
-    Jelly \
+    MusicFX \
     Launcher3 \
     LiveWallpapers \
     LiveWallpapersPicker \
