@@ -2,8 +2,7 @@
 PRODUCT_PACKAGES += \
      MarkupGoogle \
      WellbeingPrebuilt \
-     LatinIME \
-     FMRadio
+     LatinIME
 
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
