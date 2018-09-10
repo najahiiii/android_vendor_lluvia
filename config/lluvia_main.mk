@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
      MarkupGoogle \
      WellbeingPrebuilt \
-     LatinIME
+     LatinIME \
+     PixelLauncher3
 
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
