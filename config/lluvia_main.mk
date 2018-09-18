@@ -29,3 +29,7 @@ $(call inherit-product, vendor/lluvia/config/lluvia_props.mk)
 
 # Call Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/themes/overlay/common
+
+# Clean cache
+PRODUCT_COPY_FILES += \
+    vendor/pixys/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
