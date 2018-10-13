@@ -1,6 +1,6 @@
 PRODUCT_BRAND ?= LLuvia
 
-LLUVIA_VERSION_NUMBER := 3.0
+LLUVIA_VERSION_NUMBER := v3.0
 
 ifndef LLUVIA_BUILD_TYPE
 LLUVIA_BUILD_TYPE := ManMade
@@ -16,8 +16,19 @@ PRODUCT_GENERIC_PROPERTIES += \
 endif
 
 LLUVIA_VERSION := LLuviaOS-$(LLUVIA_VERSION_NUMBER)-$(shell date -u +%Y%m%d)-$(LLUVIA_BUILDTYPE)-$(LLUVIA_BUILD)
+LLUVIA_MOD_VERSION := $(LLUVIA_VERSION)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.lluvia.version=$(LLUVIA_VERSION) \
+  ro.lluvia.releasetype=$(LLUVIA_BUILD_TYPE) \
+  ro.modversion=$(LLUVIA_MOD_VERSION)
+
+LLUVIA_DISPLAY_VERSION := $(LLUVIA_VERSION)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.lluvia.display.version=$(LLUVIA_DISPLAY_VERSION)
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -176,8 +187,6 @@ PRODUCT_PACKAGES += \
     su
 endif
 endif
-
-DEVICE_PACKAGE_OVERLAYS += vendor/lluvia/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lluvia/config/partner_gms.mk
