@@ -173,4 +173,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/lluvia/overlay/common
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lluvia/config/partner_gms.mk
 
+include vendor/lluvia/config/lluvia_main.mk
+
 $(call prepend-product-if-exists, vendor/extra/product.mk)
