@@ -46,5 +46,5 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	@echo -e ${CL_CYN}"LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL    uuuuuuuu  uuuu         vvv           iiiiiiii  aaaaaaaaaa  aaaa    OOOOOOOOO      SSSSSSSSSSSSSSS   "${CL_CYN}
 	@echo -e ${CL_RED}"                                                                                                                                                        "${CL_RED}
 	@echo -e ${CL_RED}"                                                      There had been a Storm! Enjoy the Nature                                                          "${CL_RED}
-	@echo -e ${CL_RED}"$(LLUVIA_TARGET_PACKAGE)
+	@echo -e ${CL_RED}"$(LLUVIA_TARGET_PACKAGE)"${CL_RED}
 rain: bacon
