@@ -13,7 +13,7 @@ PRODUCT_COPY_FILES += \
 
 else
 PRODUCT_COPY_FILES += \
-    vendor/pixys/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so
+    vendor/lluvia/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so
 endif
 
 # Pixel sysconfig
@@ -32,4 +32,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/themes/overlay/common
 
 # Clean cache
 PRODUCT_COPY_FILES += \
-    vendor/pixys/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
+    vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
