@@ -11,6 +11,13 @@ PRODUCT_PACKAGES += \
      MaterialFXPrebuilt \
      AmbientPlayHistoryProvider
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStilesDefault \
+    QStilesCircleTrim \
+    QStilesSquircleTrim \
+    QStilesTwoToneCircle
+
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
 PRODUCT_COPY_FILES += \
