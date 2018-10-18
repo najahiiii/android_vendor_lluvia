@@ -33,3 +33,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/themes/overlay/common
 # Clean cache
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
+
+# Wi-fi
+PRODUCT_PROPERTY_OVERRIDES := \
+     persist.sys.wfd.nohdcp=1 \
+     persist.debug.wfd.enable=1 \
+     persist.sys.wfd.virtual=0 \
+     persist.debug.wfd.enable=1 \
+     persist.sys.wfd.virtual=0
