@@ -12,4 +12,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(KERNEL_SRC)
 endif
 
-include vendor/pixys/config/BoardConfigKernel.mk
+include vendor/lluvia/config/BoardConfigKernel.mk
+
+include vendor/lluvia/config/BoardConfigSoong.mk
