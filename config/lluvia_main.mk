@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
      WellbeingPrebuilt \
      LatinIME \
      PixelLauncher3 \
+     WallpaperPickerGooglePrebuilt \
      LLuviaStorm
 
 # Markup libs
