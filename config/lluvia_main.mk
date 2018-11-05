@@ -6,7 +6,8 @@ PRODUCT_PACKAGES += \
      PixelLauncher3 \
      WallpaperPickerGooglePrebuilt \
      LLuviaStorm \
-     WeatherClient
+     WeatherClient \
+     MaterialFXPrebuilt
 
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
