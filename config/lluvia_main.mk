@@ -5,7 +5,8 @@ PRODUCT_PACKAGES += \
      LatinIME \
      PixelLauncher3 \
      WallpaperPickerGooglePrebuilt \
-     LLuviaStorm
+     LLuviaStorm \
+     WeatherClient
 
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
@@ -38,6 +39,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/themes/overlay/common
 # Clean cache
 PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
+
+# Weather
+PRODUCT_COPY_FILES += \
+     vendor/lluvia/prebuilt/common/etc/permissions/com.lluvia.weather.client.xml:system/etc/permissions/com.lluvia.weather.client.xml
 
 # Wi-fi
 PRODUCT_PROPERTY_OVERRIDES := \
