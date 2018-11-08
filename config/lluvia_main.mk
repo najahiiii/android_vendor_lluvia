@@ -3,7 +3,8 @@ PRODUCT_PACKAGES += \
      MarkupGoogle \
      WellbeingPrebuilt \
      LatinIME \
-     PixelLauncher3
+     PixelLauncher3 \
+     LLuviaStorm
 
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
