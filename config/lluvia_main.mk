@@ -7,7 +7,8 @@ PRODUCT_PACKAGES += \
      WallpaperPickerGooglePrebuilt \
      LLuviaStorm \
      WeatherClient \
-     MaterialFXPrebuilt
+     MaterialFXPrebuilt \
+     AmbientPlayHistoryProvider
 
 # Markup libs
 ifeq ($(TARGET_ARCH),arm64)
