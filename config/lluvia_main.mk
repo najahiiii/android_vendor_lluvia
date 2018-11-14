@@ -22,6 +22,9 @@ PRODUCT_COPY_FILES += \
     vendor/lluvia/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
     vendor/lluvia/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 
+# Fonts
+include vendor/lluvia/config/fonts.mk
+
 # LLuvia Theme
 include vendor/lluvia/themes/config.mk
 
