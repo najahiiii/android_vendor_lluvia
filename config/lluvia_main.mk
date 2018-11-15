@@ -23,7 +23,7 @@ endif
 
 # Pixel sysconfig
 PRODUCT_COPY_FILES += \
-    vendor/lluvia/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+    vendor/lluvia/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml \
     vendor/lluvia/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 
 # Fonts
@@ -56,3 +56,11 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Sounds
 include vendor/lluvia/config/sounds.mk
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
