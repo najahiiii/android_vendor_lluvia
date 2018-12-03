@@ -3,7 +3,6 @@ PRODUCT_PACKAGES += \
      MarkupGoogle \
      WellbeingPrebuilt \
      LatinIME \
-     PixelLauncher3 \
      Launcher3 \
      WallpaperPickerGooglePrebuilt \
      LLuviaStorm \
