@@ -116,6 +116,10 @@ else ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
      PRODUCT_COPY_FILES += vendor/lluvia/media/1440.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),1600)
      PRODUCT_COPY_FILES += vendor/lluvia/media/1600.zip:system/media/bootanimation.zip
+else ifeq ($(TARGET_BOOT_ANIMATION_RES),2160)
+     PRODUCT_COPY_FILES += vendor/lluvia/media/2160.zip:system/media/bootanimation.zip
+else ifeq ($(TARGET_BOOT_ANIMATION_RES),2340)
+     PRODUCT_COPY_FILES += vendor/lluvia/media/2340.zip:system/media/bootanimation.zip
 else
     $(error "Bootanimation: TARGET_BOOT_ANIMATION_RES is undefined")
 endif
