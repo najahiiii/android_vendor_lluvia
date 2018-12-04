@@ -1,5 +1,6 @@
 # LLuviaOS apps
 PRODUCT_PACKAGES += \
+     Blokada \
      MarkupGoogle \
      WellbeingPrebuilt \
      LatinIME \
