@@ -134,5 +134,9 @@
     <string name="config_headlineFontFamilyLight">google-sans</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
     <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
-
+ 
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.font.engine</item>
+    </string-array>
+    
 </resources>
